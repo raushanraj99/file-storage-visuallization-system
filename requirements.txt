@@ -1,0 +1,11 @@
+# Required: Python standard library only
+# No third-party packages required for CLI version
+
+# Optional (if you plan to extend with GUI)
+# tkinter     # Built-in with most Python installations
+# matplotlib  # For future visualization
+# rich        # For beautiful CLI output (optional)
+
+# Python Version
+python >= 3.8
+

@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# VS Code settings (if using)
+.vscode/
+
+# macOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# Pytest / coverage / testing
+.pytest_cache/
+coverage.xml
+htmlcov/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# State storage file
+storage_state.pkl
+
+# IDE-specific files
+.idea/
+
+# Ignore Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
