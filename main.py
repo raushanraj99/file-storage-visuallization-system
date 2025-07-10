@@ -4,8 +4,6 @@ from filesystem.directory import Directory
 from storage.contiguous import ContiguousAllocation
 from storage.linked import LinkedAllocation
 from storage.indexed import IndexedAllocation
-
-current_allocation = ContiguousAllocation()
 from utils.persistence import save_state, load_state
 
 blocks, root_directory = load_state()
@@ -22,16 +20,6 @@ strategy_map = {
     "indexed": IndexedAllocation()
 }
 
-strategy_map = {
-    "contiguous": ContiguousAllocation(),
-    "linked": LinkedAllocation(),
-    "indexed": IndexedAllocation()
-}
-
-def main():
-    print("=== File Storage System Simulator ===")
-    main_menu()
-
 if __name__ == "__main__":
-    current_allocation = [ContiguousAllocation()]
+    print("=== File Storage System Simulator ===")
     main_menu(root_directory, block_manager, strategy_map, current_allocation)
