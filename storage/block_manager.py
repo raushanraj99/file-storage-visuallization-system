@@ -28,3 +28,10 @@ class BlockManager:
         for i in range(0, self.total_blocks, 8):
             row = self.blocks[i:i+8]
             print(' '.join(['.' if b is None else 'X' for b in row]))
+            
+    def disk_summary(self):
+        used = len([b for b in self.blocks if b is not None])
+        free = len(self.blocks) - used
+        print(f"\n🔍 Disk Summary:\nTotal: {len(self.blocks)} | Used: {used} | Free: {free}")
+
+   

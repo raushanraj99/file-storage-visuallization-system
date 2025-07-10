@@ -41,3 +41,4 @@ class Directory:
             else:
                 raise Exception(f"Folder '{part}' not found.")
         return current
+   

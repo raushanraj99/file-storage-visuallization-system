@@ -8,7 +8,9 @@ def main_menu(root_directory, block_manager, strategy_map, current_allocation):
         print("3. Read File Info")
         print("4. Delete File")
         print("5. Show Disk Usage")
-        print("6. Exit")
+        print("6. Show Disk Summary")
+        print("7. List all files")
+        print("8. Exit")
 
         choice = input("Enter choice: ").strip()
 
@@ -70,11 +72,17 @@ def main_menu(root_directory, block_manager, strategy_map, current_allocation):
             else:
                 print("❌ File not found.")
 
-
         elif choice == '5':
             block_manager.show_disk()
 
         elif choice == '6':
+            block_manager.disk_summary()
+        
+        elif choice=='7':
+            print("\n list of all files")
+            root_directory.list_contents()
+
+        elif choice == '8':
             print("Exiting...")
             break
 
